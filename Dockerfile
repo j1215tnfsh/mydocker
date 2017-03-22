@@ -6,7 +6,8 @@ RUN cd /bin \
 
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
-       vim subversion
+       vim \
+       subversion
 
 EXPOSE 80
 CMD ["/bin/bash"]
